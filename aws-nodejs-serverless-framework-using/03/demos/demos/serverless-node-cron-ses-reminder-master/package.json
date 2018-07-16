@@ -1,0 +1,26 @@
+{
+  "name": "serverless-node-cron-ses-reminder",
+  "version": "1.0.0",
+  "description": "A function that triggers using the serverless `schedule` event and then sends an AWS SES email reminder",
+  "main": "handler.js",
+  "dependencies": {
+    "aws-sdk": "^2.75.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-fernando-mc:fernando-mc/serverless-node-cron-ses-reminder.git"
+  },
+  "keywords": [
+    "serverless",
+    "node",
+    "aws",
+    "cron",
+    "ses"
+  ],
+  "author": "Fernando Medina Corey",
+  "license": "MIT"
+}

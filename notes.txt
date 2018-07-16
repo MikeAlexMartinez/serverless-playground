@@ -1,0 +1,103 @@
+=======================================
+# Notes on Node AWS Serverless Course #
+=======================================
+
+Course Plan & Concepts
+
+Modules
+1. UP and running with the serverless framework on AWS:
+  Installation, Application Model and Development
+
+2. Deploying a Text Notification Website with a Serverless HTTP API:
+  Plugins, APIs and Third Party Integrations
+
+3. Scaffolding and Deploying Serverless CRUD APIs:
+  CRUD APIs, Databases and Testing / Debugging
+
+4. What is Multi-platform Serverless?
+  IaaS Risks, Multi-platform/Resilient Architectures, IaaS Agnostic Code
+
+Projects:
+1. Email Service with Cron jobs.
+2. Text Notification Website
+3. Crud APIS for serverless website with DynamoDB
+
+=======================================================
+# Section 1                                           #
+# Up and Running with the Serverless Framework on AWS #
+=======================================================
+  Installation
+    - Serverless Installation
+    - OS Differences
+    - AWS Setup
+  Serverless Application Model
+    - Functions, events, resources, and services
+  Serverless Development
+    - Configuration, deployment, and Testing
+  Projects
+    - Cron Schdeuled email reminder
+
+
+=> Serverless Application Model
+================================
+
+Functions 
+- AWS Lambda
+Can trigger with API Gateway
+Schedule like Cron
+S3
+Cloudwatch
+DynamoDB
+Alexa Skills (IoT)
+
+Events - 
+Resources - 
+Services - Encapsulate the above
+  They contain a
+  - serverless.yml file, main config file
+  - function code
+  - Dependencies
+
+  in a simple node service
+  woofGarden/
+  - handler.js
+  - serverless.yml
+
+  more complex
+    woofGardenPets/
+    - handler.js
+    - node_modules/
+    - serverless.yml
+    - package.json
+    woofGardenReminders/
+    - handler.js
+    - node_modules/
+    - serverless.yml
+    - package.json
+
+a basic serverless.yml
+
+  service:
+    name: myService
+
+  provider:
+    name: AWS
+    runtime: nodejs6.10
+
+  package:
+    include:
+    - src/**
+    - handler.js
+    exclude:
+    - .git/**
+    - .travis.yml
+
+You can also configure resources.
+
+## Creating a Project
+
+bookstrap service files using 'serverless' aka sls command
+amend serverless.yml file
+
+
+
