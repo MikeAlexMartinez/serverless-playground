@@ -99,5 +99,44 @@ You can also configure resources.
 bookstrap service files using 'serverless' aka sls command
 amend serverless.yml file
 
+Creating our first serverless service:
+  1 - Create Service
+  2 - Serverless.yml
+  3 - handler.js
+..
 
+
+Serverless Plugins
+- Overview
+- 'serverless-finch'
+
+Serverless APIs
+- Component Overview
+- API Gateway
+- HTTP API Configuration
+
+Project - Text Notification Website
+- Google Recpatcha & Twilio setup
+- Service Scaffolding
+- Functions
+- API endpoints
+- Deployment
+
+To install a plugin we should use npm for installs and 
+will also need to amend the serverless config file to
+add the required plugins.
+  We might need a custom section to define custom options.
+
+Serverless APIs
+
+The API Gateway is an AWS service that enables developers to create, publish, maintain, monitor, and secure
+APIs at any scale.
+- Easy to make REST Apis, scalable and secure
+- INtegrates easily with AWS Lambda
+- Easy pricing - 1m requests are free.
+- Transfer
+
+We can pass variables using endpoint parameters e.g. {id}
+
+You may also need to manage environment variables.
 
