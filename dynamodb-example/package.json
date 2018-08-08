@@ -1,0 +1,14 @@
+{
+  "name": "dynamodb-example",
+  "version": "1.0.0",
+  "description": "pluralsight dynamodb serverless example",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Martinez",
+  "license": "MIT",
+  "devDependencies": {
+    "uuid": "^3.3.2"
+  }
+}
